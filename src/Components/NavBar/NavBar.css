@@ -1,0 +1,18 @@
+.navbar{
+    background-image: url(https://raddevon.com/wp-content/uploads/2018/10/react.jpg);
+    background-position: -60%;
+    color:black;
+    text-align: center;
+      min-height: 2vh;
+  display: flex;
+  justify-content: center;
+}
+.musicspan{
+    font-size: 40px;
+    color:rgb(37, 247, 9);
+}
+.planetspan{
+    font-size: 40px;
+    color:rgb(5, 216, 231);
+    
+}
