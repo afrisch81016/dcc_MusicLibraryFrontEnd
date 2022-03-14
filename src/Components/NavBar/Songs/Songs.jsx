@@ -19,7 +19,10 @@ function handleSubmit(event){
         release_date : release_date,
         genre : genre,
     };
-    console.log(newSongEntry)    // console log to see data if there is an issue
+    console.log(newSongEntry);    // console log to see data if there is an issue
+    props.createSong(newSongEntry);
+
+
 
     return (
         <form className='content' onSubmit={handleSubmit}>
@@ -37,3 +40,5 @@ function handleSubmit(event){
         </form>
     );
 }}
+
+export default SongEntry
