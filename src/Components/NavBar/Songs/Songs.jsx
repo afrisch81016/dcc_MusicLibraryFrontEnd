@@ -1,7 +1,7 @@
 import React,{ useState } from 'react';
 import './Songs.css'
 
-const SongEntry = (props) => {
+const Songs = (props) => {
 
     const[title, setTitle] = useState(''); //  getting data from form holding it for handleSubmit function below
     const[artist, setArtist] = useState('');
@@ -21,11 +21,11 @@ function handleSubmit(event){
     };
     console.log(newSongEntry);    // console log to see data if there is an issue
     props.createSong(newSongEntry);
+}
 
-
-
+// forms take in data while tables display data
     return (
-        <form className='content' onSubmit={handleSubmit}>
+        <form className='content' onSubmit={handleSubmit}> 
             <label>Title</label>
              <input type='text' onChange ={(event) => setTitle(event.target.value)} value= {title}/>  
             <label>Artist</label>
@@ -36,9 +36,9 @@ function handleSubmit(event){
             <input type='text' onChange={(event) => setRelease_date(event.target.value)} value= {release_date}/>
             <label>Genre</label>
             <input type='text' onChange={(event) => setGenre(event.target.value)} value= {genre}/>           
-            <input type="submit" value="Add Post"></input>
+            <input type="submit" value="Add Song"></input>
         </form>
     );
-}}
+    }
 
-export default SongEntry
+export default Songs;
