@@ -39,7 +39,6 @@ await getAllSongs();
   return (
     <div>
       <NavBar />
-      <SearchBar/>
       <MusicTable songData = {songData}/>
       <Songs createSong={createSong}/>
 

@@ -26,7 +26,7 @@ const [searchTerm, setSearchTerm] = useState('');
             if (searchTerm === ""){
                 return song;
             }
-            else if(song.title.toLowerCase().includes(searchTerm.toLowerCase()) || song.artist.toLowerCase().includes(searchTerm.toLowerCase())) {
+            else if(song.title.toLowerCase().includes(searchTerm.toLowerCase()) || song.artist.toLowerCase().includes(searchTerm.toLowerCase()) || song.album.toLowerCase().includes(searchTerm.toLowerCase()) || song.release_date.toLowerCase().includes(searchTerm.toLowerCase()) || song.genre.toLowerCase().includes(searchTerm.toLowerCase())){
                 return song;
             }
         }).map((song, index) => {
