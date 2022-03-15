@@ -1,6 +1,22 @@
 .content{
-    background-color: rgba(240, 255, 255, 0.877);
+    background-color: rgba(255, 255, 255, 0.877);
     font-size: 12px;
     align-items: center;
 
+}
+.titlecolor{
+    background-color: rgb(226, 37, 37);
+    
+}
+.artistcolor{
+    background-color: rgb(226, 37, 37);
+}
+.albumcolor{
+    background-color: rgb(226, 37, 37);
+}
+.releasedatecolor{
+    background-color: rgb(226, 37, 37);
+}
+.genrecolor{
+    background-color: rgb(226, 37, 37);
 }

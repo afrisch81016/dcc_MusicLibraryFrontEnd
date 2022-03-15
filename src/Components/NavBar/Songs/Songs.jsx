@@ -26,15 +26,15 @@ function handleSubmit(event){
 // forms take in data while tables display data
     return (
         <form className='content' onSubmit={handleSubmit}> 
-            <label>Title</label>
+            <label className = 'titlecolor'>Title</label>
              <input type='text' onChange ={(event) => setTitle(event.target.value)} value= {title}/>  
-            <label>Artist</label>
+            <label className = 'artistcolor'>Artist</label>
             <input type='text' onChange={(event) => setArtist(event.target.value)} value= {artist}/>
-            <label>Album</label>
+            <label className = 'albumcolor'>Album</label>
             <input type='text' onChange={(event) => setAlbum(event.target.value)} value= {album}/>
-            <label>Release Date</label>
+            <label className = 'releasedatecolor'>Release Date</label>
             <input type='text' onChange={(event) => setRelease_date(event.target.value)} value= {release_date}/>
-            <label>Genre</label>
+            <label className = 'genrecolor'>Genre</label>
             <input type='text' onChange={(event) => setGenre(event.target.value)} value= {genre}/>           
             <input type="submit" value="Add Song"></input>
         </form>

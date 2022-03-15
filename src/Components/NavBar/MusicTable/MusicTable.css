@@ -1,0 +1,24 @@
+.tablerow1{
+    background-color: rgb(196, 41, 41) ;
+    font-style: italic;
+    font-family: 'Segoe UI';
+    text-align: center;
+}
+.tablerow2{
+    background-color: rgb(196, 41, 41);
+    font-style: italic;
+    font-family: 'Segoe UI';
+    text-align: center;
+}
+.tbodycolor1{
+    background-color: ghostwhite;
+    font-style: italic;
+    font-family: 'Segoe UI';
+    text-align: center;
+    
+}
+.musicdatastyle{
+    padding-left: 55px;
+    padding-top: 12px;
+
+}

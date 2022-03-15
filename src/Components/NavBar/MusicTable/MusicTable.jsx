@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import './MusicTable.css'
 
 const DisplayMusicTable = (props) => {
 
@@ -7,13 +7,13 @@ const [searchTerm, setSearchTerm] = useState('');
 
     return(
         <div>
-        <div classname = 'musictable'>
+        <div  className = 'musicdatastyle'>
             <label>filter songs</label>
             <input type="text" placeholder="Search...(ex Rock)" onChange={(event) => setSearchTerm(event.target.value)}/>
         </div>
         <table>
             <thead>
-                <tr>
+                <tr className = 'tablerow2'>
                     <th>Title</th>
                     <th>artist</th>
                     <th>album</th>
@@ -21,7 +21,7 @@ const [searchTerm, setSearchTerm] = useState('');
                     <th>genre</th>
                 </tr>
             </thead>
-        <tbody>
+        <tbody className = 'tbodycolor1'>
         {props.songData.filter((song) => {
             if (searchTerm === ""){
                 return song;
@@ -31,7 +31,7 @@ const [searchTerm, setSearchTerm] = useState('');
             }
         }).map((song, index) => {
             return (
-            <tr key={index}>
+            <tr classname = 'tablerow1' key={index}>
                 <td>{song.title}</td>
                 <td>{song.artist}</td>
                 <td>{song.album}</td>
