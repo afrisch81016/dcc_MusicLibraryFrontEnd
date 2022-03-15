@@ -3,6 +3,8 @@ import axios from 'axios'
 import NavBar from "./Components/NavBar/NavBar";
 import Songs from "./Components/NavBar/Songs/Songs"
 import MusicTable from "./Components/NavBar/MusicTable/MusicTable"
+import SearchBar from  "./Components/NavBar/SearchBar/SearchBar"
+
 
 function App() {
 
@@ -37,7 +39,8 @@ await getAllSongs();
   return (
     <div>
       <NavBar />
-      <MusicTable songdata = {songData}/>
+      <SearchBar/>
+      <MusicTable songData = {songData}/>
       <Songs createSong={createSong}/>
 
     </div>

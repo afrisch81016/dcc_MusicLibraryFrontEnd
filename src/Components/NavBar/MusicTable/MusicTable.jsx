@@ -1,8 +1,5 @@
 import React from "react";
 
-
-
-
 const DisplayMusicTable = (props) => {
 
     return(
@@ -10,12 +7,27 @@ const DisplayMusicTable = (props) => {
         {props.songData.map((song, index) => {
         return (
             <div classname = 'musicborder' key = {index}>
-                <div><p classname = 'songs.title'>{song.title}</p></div>
-                <div><p classname = 'songs.artist'>{song.artist}</p></div>
-                <div><p classname = 'songs.album'>{song.album}</p></div>
-                <div><p classname = 'songs.release_date'>{song.release_date}</p></div>
-                <div><p classname = 'songs.genre'>{song.genre}</p></div>
-            </div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>{song.title}</td>
+                        </tr>
+                        <tr>
+                            <td>{song.artist}</td>
+                        </tr>
+                        <tr>
+                            <td>{song.album}</td>
+                        </tr>
+                        <tr>
+                            <td>{song.release_date}</td>
+                        </tr>
+                        <tr>
+                            <td>{song.genre}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>            
+                
         )
         })}
         </div>
